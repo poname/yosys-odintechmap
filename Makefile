@@ -670,7 +670,7 @@ OBJS += libs/sha1/sha1.o
 ifeq ($(ENABLE_ODIN_TECHMAP),1)
 OBJS += libs/libvtrutil/src/vtr_util.o libs/libvtrutil/src/vtr_assert.o libs/libvtrutil/src/vtr_token.o 
 OBJS += libs/libvtrutil/src/vtr_memory.o libs/libvtrutil/src/vtr_list.o libs/libvtrutil/src/vtr_log.o
-OBJS += libs/libvtrutil/src/vtr_expr_eval.o libs/libvtrutil/src/vtr_digest.o libs/libvtrutil/src/vtr_math.o
+OBJS += libs/libvtrutil/src/vtr_digest.o libs/libvtrutil/src/vtr_math.o
 OBJS += libs/liblog/src/log.o 
 OBJS += libs/pugixml/src/pugixml.o 
 OBJS += libs/libpugiutil/src/pugixml_loc.o libs/libpugiutil/src/pugixml_util.o libs/libarchfpga/src/physical_types.o
