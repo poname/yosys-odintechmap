@@ -88,9 +88,9 @@ all: top-all
 YOSYS_SRC := $(dir $(firstword $(MAKEFILE_LIST)))
 VPATH := $(YOSYS_SRC)
 
-ifeq ($(ENABLE_ODIN_TECHMAP),1)
-CXXSTD ?= c++14
-endif
+#ifeq ($(ENABLE_ODIN_TECHMAP),1)
+#CXXSTD ?= c++14
+#endif
 CXXSTD ?= c++11
 CXXFLAGS := $(CXXFLAGS) -Wall -Wextra -ggdb -I. -I"$(YOSYS_SRC)" -MD -MP -D_YOSYS_ -fPIC -I$(PREFIX)/include
 LDLIBS := $(LDLIBS) -lstdc++ -lm
